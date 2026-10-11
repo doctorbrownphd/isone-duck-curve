@@ -1,0 +1,24 @@
+# Data stays out of git. Raw files live in S3 and locally under data/.
+data/
+*.xlsx
+*.xls
+*.parquet
+
+# Secrets and AWS config. Never commit these.
+.env
+.env.*
+*.pem
+.aws/
+credentials
+config.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+

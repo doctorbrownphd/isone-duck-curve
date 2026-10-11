@@ -1,0 +1,9 @@
+as_of,ct_mwac,ma_mwac,me_mwac,nh_mwac,ri_mwac,vt_mwac,new_england_mwac,installations,source_document,source_page,source_url,table_title
+2018-12-31,464.34,1871.27,41.40,83.84,116.66,306.30,2883.81,157006,Final 2019 PV Forecast,13,https://www.iso-ne.com/static-assets/documents/2019/04/final-2019-pv-forecast.pdf,December 2018 Year-To-Date PV Installed Capacity
+2019-12-31,566.53,2180.45,56.32,105.24,159.75,364.24,3432.53,183508,Final 2020 PV Forecast,15,https://www.iso-ne.com/static-assets/documents/2020/04/final_2020_pv_forecast.pdf,December 2019 Cumulative PV Totals
+2020-12-31,682.26,2502.28,68.83,125.32,223.75,393.48,3995.93,209631,Final 2021 PV Forecast,15,https://www.iso-ne.com/static-assets/documents/2021/04/final_2021_pv_forecast.pdf,December 2020 Cumulative PV Totals
+2021-12-31,809.08,2953.43,125.05,156.88,288.38,434.24,4767.06,243301,Final 2022 PV Forecast,14,https://www.iso-ne.com/static-assets/documents/2022/04/final_2022_pv_forecast.pdf,December 2021 Cumulative PV Totals
+2022-12-31,912,3289,295,183,326,468,5473,282965,Final 2023 PV Forecast,15,https://www.iso-ne.com/static-assets/documents/2023/04/2023_pv_forecast_final.pdf,December 2022 Cumulative PV Totals
+2023-12-31,1091,3712,588,244,400,507,6542,347341,December 2023 Distributed Generation Survey Results,4,https://www.iso-ne.com/static-assets/documents/100008/survey_results.pdf,December 2023 Cumulative PV Totals
+2024-12-31,1289,4019,1053,280,465,529,7634,397105,Final 2025 PV Forecast,60,https://www.iso-ne.com/static-assets/documents/100022/2025_final_pv_forecast.pdf,December 2024 Cumulative DER PV Totals
+2025-12-31,1458,4286,1181,333,504,597,8359,,Final 2026 DER Forecast,14,https://www.iso-ne.com/static-assets/documents/100033/2026_final_der_forecast.pdf,Final 2026 DER PV Forecast 10 Year Horizon (Thru 2025 column)

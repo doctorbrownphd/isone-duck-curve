@@ -1,0 +1,131 @@
+DUCK CURVE DAY MODEL
+Spark 3.5.3. Rows in daily table: 2,678. Rows with every predictor: 2,670 (8 dropped for a missing weather value).
+  train 2019-06-01 to 2024-12-31: 2,040 days, 251 duck days
+  test 2025: 361 days, 132 duck days
+  holdout 2026 (to Sep 29): 269 days, 106 duck days
+
+SEPARATION CHECK: training duck days by category (a category with 0 would break the fit)
+  Jan 4/155  Feb 32/142  Mar 54/155  Apr 49/150  May 33/155  Jun 7/179  Jul 1/186  Aug 2/186  Sep 9/180  Oct 23/186  Nov 26/180  Dec 11/186
+  Mon 25/292  Tue 24/292  Wed 19/291  Thu 20/290  Fri 35/291  Sat 63/292  Sun 65/292
+  holiday=0 245/1971  holiday=1 6/69
+
+HYPOTHESIS TEST: likelihood ratio test on the training data
+  baseline (intercept only): intercept -1.9640, deviance 1521.583, iterations 6
+  full model: deviance 656.381, iterations 9 of at most 100, AIC 700.38
+  G = 1521.583 - 656.381 = 865.202
+  df = 21
+  p = P(chi-square(21) > 865.202) = 1.324e-169
+  decision at alpha 0.05: reject the null hypothesis
+
+COEFFICIENTS (full model, training data). Odds ratio = exp(coefficient). 95% CI = exp(coef +/- 1.96 SE).
+  term                              coef       SE        z          p  odds ratio               95% CI
+  month_Feb                       3.6807   0.7293    5.047   4.50e-07     39.6726   [9.4988, 165.6960]
+  month_Mar                       5.3278   0.7549    7.058   1.69e-12    205.9896   [46.9131, 904.4752]
+  month_Apr                       5.7483   0.8175    7.032   2.04e-12    313.6552   [63.1850, 1557.0079]
+  month_May                       4.3445   0.8654    5.020   5.16e-07     77.0512   [14.1294, 420.1789]
+  month_Jun                       1.8601   1.0204    1.823   6.83e-02      6.4241   [0.8693, 47.4718]
+  month_Jul                      -1.1770   1.4097   -0.835   4.04e-01      0.3082   [0.0194, 4.8842]
+  month_Aug                       0.1593   1.1829    0.135   8.93e-01      1.1727   [0.1154, 11.9150]
+  month_Sep                       1.4243   0.9420    1.512   1.31e-01      4.1548   [0.6557, 26.3253]
+  month_Oct                       2.7473   0.8335    3.296   9.80e-04     15.6003   [3.0455, 79.9121]
+  month_Nov                       2.8371   0.7558    3.754   1.74e-04     17.0656   [3.8793, 75.0742]
+  month_Dec                       1.7664   0.7726    2.286   2.22e-02      5.8495   [1.2868, 26.5917]
+  dow_Tue                         0.2132   0.4301    0.496   6.20e-01      1.2377   [0.5327, 2.8754]
+  dow_Wed                         0.0188   0.4320    0.044   9.65e-01      1.0190   [0.4370, 2.3764]
+  dow_Thu                         0.2930   0.4374    0.670   5.03e-01      1.3404   [0.5688, 3.1589]
+  dow_Fri                         0.9911   0.4022    2.464   1.37e-02      2.6942   [1.2249, 5.9261]
+  dow_Sat                         2.5882   0.4025    6.430   1.28e-10     13.3062   [6.0453, 29.2880]
+  dow_Sun                         2.8807   0.4074    7.071   1.53e-12     17.8275   [8.0227, 39.6149]
+  is_holiday                      1.1284   0.6605    1.708   8.76e-02      3.0906   [0.8468, 11.2792]
+  daily_high_temp_f              -0.0194   0.0119   -1.632   1.03e-01      0.9808   [0.9582, 1.0039]
+  daytime_sky_cover_oktas        -0.9507   0.0709  -13.404   0.00e+00      0.3865   [0.3363, 0.4441]
+  btm_solar_gw                    1.6005   0.1242   12.883   0.00e+00      4.9554   [3.8845, 6.3216]
+  intercept                      -9.4525   1.0176   -9.289   0.00e+00      0.0001   [0.0000, 0.0006]
+  Reference levels: January, Monday. Solar is per 1,000 MW of installed capacity.
+
+DIAGNOSTICS
+  correlations among the continuous predictors (training data):
+    daily_high_temp_f          1.000  -0.135  -0.048
+    daytime_sky_cover_oktas   -0.135   1.000  -0.002
+    btm_solar_gw              -0.048  -0.002   1.000
+  VIF daily_high_temp_f: 1.021
+  VIF daytime_sky_cover_oktas: 1.019
+  VIF btm_solar_gw: 1.002
+  Installed solar rises every year and there is no separate time trend in the model,
+  so the solar coefficient also carries anything else that changed steadily over these years.
+
+  Days are not independent. Overall duck day rate 0.183. After a duck day 0.487. After a non-duck day 0.115.
+  The likelihood ratio test assumes independent days, so its p-value is smaller than it should be.
+
+TEST SET (scored once; these describe the model and do not decide the hypothesis)
+
+Test year 2025: 361 days scored, 132 duck days, threshold 0.5
+                      predicted duck   predicted not
+  actual duck day                106              26
+  actual other day                65             164
+  precision = TP / (TP + FP) = 106 / 171 = 0.620
+  recall    = TP / (TP + FN) = 106 / 132 = 0.803
+  accuracy  = 0.748   (always guessing 'not a duck day' would score 0.634)
+
+Second holdout 2026 (Jan 1 to Sep 29), reported separately: 269 days scored, 106 duck days, threshold 0.5
+                      predicted duck   predicted not
+  actual duck day                 98               8
+  actual other day                74              89
+  precision = TP / (TP + FP) = 98 / 172 = 0.570
+  recall    = TP / (TP + FN) = 98 / 106 = 0.925
+  accuracy  = 0.695   (always guessing 'not a duck day' would score 0.606)
+
+SENSITIVITY: same test without the near-tie days (daytime and overnight minimum within 25 MW)
+  training days 2,021 (dropped 19), duck days 247
+  baseline (intercept only): intercept -1.9716, deviance 1500.869, iterations 6
+  full model: deviance 636.333, iterations 9 of at most 100, AIC 680.33
+  G = 1500.869 - 636.333 = 864.536
+  df = 21
+  p = P(chi-square(21) > 864.536) = 1.834e-169
+  decision at alpha 0.05: reject the null hypothesis
+  odds ratios, main fit vs without near ties:
+    is_holiday                   3.0906  vs   2.4806
+    daily_high_temp_f            0.9808  vs   0.9811
+    daytime_sky_cover_oktas      0.3865  vs   0.3899
+    btm_solar_gw                 4.9554  vs   5.0319
+
+RAW SPARK SUMMARY, FULL MODEL
+Coefficients:
+             Feature Estimate Std Error  T Value P Value
+         (Intercept)  -9.4525    1.0176  -9.2888  0.0000
+           month_Feb   3.6807    0.7293   5.0466  0.0000
+           month_Mar   5.3278    0.7549   7.0580  0.0000
+           month_Apr   5.7483    0.8175   7.0319  0.0000
+           month_May   4.3445    0.8654   5.0201  0.0000
+           month_Jun   1.8601    1.0204   1.8228  0.0683
+           month_Jul  -1.1770    1.4097  -0.8350  0.4037
+           month_Aug   0.1593    1.1829   0.1347  0.8929
+           month_Sep   1.4243    0.9420   1.5120  0.1305
+           month_Oct   2.7473    0.8335   3.2961  0.0010
+           month_Nov   2.8371    0.7558   3.7536  0.0002
+           month_Dec   1.7664    0.7726   2.2863  0.0222
+             dow_Tue   0.2132    0.4301   0.4958  0.6201
+             dow_Wed   0.0188    0.4320   0.0436  0.9652
+             dow_Thu   0.2930    0.4374   0.6699  0.5029
+             dow_Fri   0.9911    0.4022   2.4643  0.0137
+             dow_Sat   2.5882    0.4025   6.4300  0.0000
+             dow_Sun   2.8807    0.4074   7.0714  0.0000
+          is_holiday   1.1284    0.6605   1.7083  0.0876
+   daily_high_temp_f  -0.0194    0.0119  -1.6317  0.1027
+daytime_sky_cover...  -0.9507    0.0709 -13.4036  0.0000
+        btm_solar_gw   1.6005    0.1242  12.8833  0.0000
+
+(Dispersion parameter for binomial family taken to be 1.0000)
+   Null deviance: 1521.5829 on 2018 degrees of freedom
+Residual deviance: 656.3810 on 2018 degrees of freedom
+AIC: 700.3810
+
+RAW SPARK SUMMARY, BASELINE MODEL
+Coefficients:
+    Feature Estimate Std Error  T Value P Value
+(Intercept)  -1.9640    0.0674 -29.1380  0.0000
+
+(Dispersion parameter for binomial family taken to be 1.0000)
+    Null deviance: 1521.5829 on 2039 degrees of freedom
+Residual deviance: 1521.5829 on 2039 degrees of freedom
+AIC: 1523.5829

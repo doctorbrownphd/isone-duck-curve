@@ -1,0 +1,8 @@
+pandas>=2.2
+openpyxl>=3.1
+requests>=2.31
+matplotlib>=3.8
+scipy>=1.11
+holidays>=0.50
+pyspark==3.5.3
+xlrd>=2.0

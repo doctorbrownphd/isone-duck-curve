@@ -1,0 +1,16 @@
+period,days,iso_ne,ours_W1,ours_W2,ours_W3,diff_primary,near_ties_in_period,source
+2024 Jun 1 to Dec 31,214,43,44,44,44,1,2,"107 for the year less 64 before June, ISO Newswire 2025-06-18"
+2024 Jun 1 to Nov 30,183,36,37,37,37,1,2,"100th of 2024 on Nov 30 less 64 before June, ISO Newswire 2025-09-17"
+2024 Jul,31,0,0,0,0,0,0,ISO Newswire 2024-11-26
+2024 Aug,31,1,1,1,1,0,1,ISO Newswire 2024-11-26
+2024 Nov 1 to 25,25,10,10,10,10,0,0,ISO Newswire 2024-11-26
+2025 Jan 1 to May 31,151,69,69,68,69,0,1,ISO Newswire 2025-06-18
+2025 Mar,31,20,20,20,20,0,0,ISO Newswire 2025-06-18
+2025 Apr,30,18,18,18,18,0,0,ISO Newswire 2025-06-18
+2025 May,31,12,12,11,12,0,0,ISO Newswire 2025-06-18
+2025 Jul,31,6,6,6,6,0,0,ISO Newswire 2025-09-17
+2025 Jan 1 to Sep 13,256,100,100,99,100,0,1,"100th of 2025 on Sep 13, ISO Newswire 2025-09-17"
+2025 full year,365,134,134,133,134,0,2,ISO Newswire 2026-01-13
+2026 Jan 1 to Jan 8,8,1,0,0,0,-1,1,"one duck day so far, on Jan 8, ISO Newswire 2026-01-13"
+2026 Jan 1 to Sep 6,249,100,97,97,97,-3,4,"100th of 2026 on Sep 6, ISO Newswire 2026-09-21"
+2026 Jan 1 to Sep 21,264,107,104,104,104,-3,4,"107th of 2026 on Sep 21, ISO Newswire 2026-09-21"

@@ -1,0 +1,139 @@
+======================================================================
+data/raw/isone_zonal/year=2018/2018_smd_hourly.xlsx
+sheets: ['Notes', 'ISO NE CA', 'ME', 'NH', 'VT', 'CT', 'RI', 'SEMA', 'WCMA', 'NEMA']
+system sheet: 'ISO NE CA'  rows=8,760
+  'Date'                       datetime64[ns] e.g. Timestamp('2018-01-01 00:00:00')
+  'Hr_End'                     int64          e.g. np.int64(1)
+  'DA_Demand'                  float64        e.g. np.float64(14147.2)
+  'RT_Demand'                  float64        e.g. np.float64(15521.098)
+  'DA_LMP'                     float64        e.g. np.float64(126.32000000000001)
+  'DA_EC'                      float64        e.g. np.float64(124.97)
+  'DA_CC'                      float64        e.g. np.float64(0.0)
+  'DA_MLC'                     float64        e.g. np.float64(1.35)
+  'RT_LMP'                     float64        e.g. np.float64(146.39000000000001)
+  'RT_EC'                      float64        e.g. np.float64(144.52)
+  'RT_CC'                      float64        e.g. np.float64(0.24)
+  'RT_MLC'                     float64        e.g. np.float64(1.6300000000000001)
+  'Dry_Bulb'                   int64          e.g. np.int64(1)
+  'Dew_Point'                  int64          e.g. np.int64(-10)
+  'System_Load'                int64          e.g. np.int64(15760)
+  'Reg_Service_Price'          float64        e.g. np.float64(1.4300000000000006)
+  'Reg_Capacity_Price'         float64        e.g. np.float64(104.395)
+  'Min_5min_RSP'               float64        e.g. np.float64(0.05)
+  'Max_5min_RSP'               float64        e.g. np.float64(8.33)
+  'Min_5min_RCP'               float64        e.g. np.float64(16.8)
+  'Max_5min_RCP'               float64        e.g. np.float64(119.99000000000001)
+hour labels in 'Hr_End': ['1', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '2', '20', '21', '22', '23', '24', '3', '4', '5', '6', '7', '8', '9']
+days with != 24 rows: 0
+======================================================================
+data/raw/isone_zonal/year=2022/2022_smd_hourly.xlsx
+sheets: ['Notes', 'ISO NE CA', 'ME', 'NH', 'VT', 'CT', 'RI', 'SEMA', 'WCMA', 'NEMA']
+system sheet: 'ISO NE CA'  rows=8,760
+  'Date'                       datetime64[ns] e.g. Timestamp('2022-01-01 00:00:00')
+  'Hr_End'                     int64          e.g. np.int64(1)
+  'DA_Demand'                  float64        e.g. np.float64(10845.4)
+  'RT_Demand'                  float64        e.g. np.float64(10789.727)
+  'DA_LMP'                     float64        e.g. np.float64(32.22)
+  'DA_EC'                      float64        e.g. np.float64(32.35)
+  'DA_CC'                      float64        e.g. np.float64(-0.12)
+  'DA_MLC'                     float64        e.g. np.float64(-0.01)
+  'RT_LMP'                     float64        e.g. np.float64(25.900000000000002)
+  'RT_EC'                      float64        e.g. np.float64(25.95)
+  'RT_CC'                      float64        e.g. np.float64(0.0)
+  'RT_MLC'                     float64        e.g. np.float64(-0.05)
+  'Dry_Bulb'                   int64          e.g. np.int64(44)
+  'Dew_Point'                  int64          e.g. np.int64(43)
+  'System_Load'                int64          e.g. np.int64(10983)
+  'Reg_Service_Price'          float64        e.g. np.float64(0.23749999999999996)
+  'Reg_Capacity_Price'         float64        e.g. np.float64(11.28416666666667)
+  'Min_5min_RSP'               float64        e.g. np.float64(0.05)
+  'Max_5min_RSP'               float64        e.g. np.float64(0.3)
+  'Min_5min_RCP'               float64        e.g. np.float64(9.99)
+  'Max_5min_RCP'               float64        e.g. np.float64(20.12)
+hour labels in 'Hr_End': ['1', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '2', '20', '21', '22', '23', '24', '3', '4', '5', '6', '7', '8', '9']
+days with != 24 rows: 0
+======================================================================
+data/raw/isone_zonal/year=2023/2023_smd_hourly.xlsx
+sheets: ['Notes', 'ISO NE CA', 'ME', 'NH', 'VT', 'CT', 'RI', 'SEMA', 'WCMA', 'NEMA']
+system sheet: 'ISO NE CA'  rows=8,760
+  'Date'                       datetime64[ns] e.g. Timestamp('2023-01-01 00:00:00')
+  'Hr_End'                     int64          e.g. np.int64(1)
+  'DA_Demand'                  float64        e.g. np.float64(9565.9)
+  'RT_Demand'                  float64        e.g. np.float64(10288.38)
+  'DA_LMP'                     float64        e.g. np.float64(31.27)
+  'DA_EC'                      float64        e.g. np.float64(31.28)
+  'DA_CC'                      float64        e.g. np.float64(0.0)
+  'DA_MLC'                     float64        e.g. np.float64(-0.01)
+  'RT_LMP'                     float64        e.g. np.float64(36.99)
+  'RT_EC'                      float64        e.g. np.float64(36.93)
+  'RT_CC'                      float64        e.g. np.float64(0.0)
+  'RT_MLC'                     float64        e.g. np.float64(0.06)
+  'Dry_Bulb'                   int64          e.g. np.int64(50)
+  'Dew_Point'                  int64          e.g. np.int64(49)
+  'System_Load'                int64          e.g. np.int64(10511)
+  'Reg_Service_Price'          float64        e.g. np.float64(0.049999999999999996)
+  'Reg_Capacity_Price'         float64        e.g. np.float64(24.250000000000004)
+  'Min_5min_RSP'               float64        e.g. np.float64(0.05)
+  'Max_5min_RSP'               float64        e.g. np.float64(0.05)
+  'Min_5min_RCP'               float64        e.g. np.float64(13.22)
+  'Max_5min_RCP'               float64        e.g. np.float64(79.4)
+hour labels in 'Hr_End': ['1', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '2', '20', '21', '22', '23', '24', '3', '4', '5', '6', '7', '8', '9']
+days with != 24 rows: 0
+======================================================================
+data/raw/isone_zonal/year=2024/2024_smd_hourly.xlsx
+sheets: ['Notes', 'ISO NE CA', 'ME', 'NH', 'VT', 'CT', 'RI', 'SEMA', 'WCMA', 'NEMA']
+system sheet: 'ISO NE CA'  rows=8,784
+  'Date'                       datetime64[ns] e.g. Timestamp('2024-01-01 00:00:00')
+  'Hr_End'                     object         e.g. '01'
+  'DA_Demand'                  float64        e.g. np.float64(11962.4)
+  'RT_Demand'                  float64        e.g. np.float64(11706.304)
+  'DA_LMP'                     float64        e.g. np.float64(28.3)
+  'DA_EC'                      float64        e.g. np.float64(28.21)
+  'DA_CC'                      float64        e.g. np.float64(0.0)
+  'DA_MLC'                     float64        e.g. np.float64(0.09)
+  'RT_LMP'                     float64        e.g. np.float64(53.46)
+  'RT_EC'                      float64        e.g. np.float64(53.36)
+  'RT_CC'                      float64        e.g. np.float64(0.0)
+  'RT_MLC'                     float64        e.g. np.float64(0.1)
+  'Dry_Bulb'                   int64          e.g. np.int64(33)
+  'Dew_Point'                  int64          e.g. np.int64(23)
+  'System_Load'                int64          e.g. np.int64(11908)
+  'Reg_Service_Price'          float64        e.g. np.float64(0.009999999999999998)
+  'Reg_Capacity_Price'         float64        e.g. np.float64(76.2625)
+  'Min_5min_RSP'               float64        e.g. np.float64(0.01)
+  'Max_5min_RSP'               float64        e.g. np.float64(0.01)
+  'Min_5min_RCP'               float64        e.g. np.float64(61.64)
+  'Max_5min_RCP'               float64        e.g. np.float64(78.41)
+hour labels in 'Hr_End': ['01', '02', '02X', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24']
+days with != 24 rows: 2
+  2024-03-10 00:00:00  rows=23
+  2024-11-03 00:00:00  rows=25
+======================================================================
+data/raw/isone_zonal/year=2025/2025_smd_hourly.xlsx
+sheets: ['Notes', 'ISO NE CA', 'ME', 'NH', 'VT', 'CT', 'RI', 'SEMA', 'WCMA', 'NEMA']
+system sheet: 'ISO NE CA'  rows=8,760
+  'Date'                       datetime64[ns] e.g. Timestamp('2025-01-01 00:00:00')
+  'Hr_End'                     object         e.g. '01'
+  'DA_Demand'                  float64        e.g. np.float64(11020.2)
+  'RT_Demand'                  float64        e.g. np.float64(11169.703)
+  'DA_LMP'                     float64        e.g. np.float64(37.21)
+  'DA_EC'                      float64        e.g. np.float64(37.17)
+  'DA_CC'                      float64        e.g. np.float64(0.0)
+  'DA_MLC'                     float64        e.g. np.float64(0.04)
+  'RT_LMP'                     float64        e.g. np.float64(55.69)
+  'RT_EC'                      float64        e.g. np.float64(55.51)
+  'RT_CC'                      float64        e.g. np.float64(0.0)
+  'RT_MLC'                     float64        e.g. np.float64(0.18)
+  'Dry_Bulb'                   int64          e.g. np.int64(40)
+  'Dew_Point'                  int64          e.g. np.int64(36)
+  'System_Load'                int64          e.g. np.int64(11402)
+  'Reg_Service_Price'          float64        e.g. np.float64(0.0075)
+  'Reg_Capacity_Price'         float64        e.g. np.float64(37.5)
+  'Min_5min_RSP'               float64        e.g. np.float64(0.0)
+  'Max_5min_RSP'               float64        e.g. np.float64(0.01)
+  'Min_5min_RCP'               float64        e.g. np.float64(0.0)
+  'Max_5min_RCP'               float64        e.g. np.float64(50.0)
+hour labels in 'Hr_End': ['01', '02', '02X', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24']
+days with != 24 rows: 2
+  2025-03-09 00:00:00  rows=23
+  2025-11-02 00:00:00  rows=25

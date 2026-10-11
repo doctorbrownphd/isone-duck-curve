@@ -1,0 +1,6 @@
+year,period,days_in_data,iso_ne_count,ours_A,ours_B,ours_C,ours_D,diff_primary,pct_diff_primary,note
+2018,2018-01-01 to 2018-12-31,365,1,0,0,0,0,-1,-100.0,"Apr 21, 2018 was the first and only 2018 duck day"
+2022,2022-01-01 to 2022-12-31,365,45,3,3,3,3,-42,-93.3,ISO Newswire 2024-11-26
+2023,2023-01-01 to 2023-12-31,365,73,5,5,5,5,-68,-93.2,ISO Newswire 2024-11-26
+2024,2024-01-01 to 2024-11-26,331,100,11,11,11,11,-89,-89.0,100th day announced 2024-11-26; cutoff is approximate
+2025,2025-01-01 to 2025-05-31,151,69,22,22,22,22,-47,-68.1,"69 of first 151 days, ISO Newswire 2025-06-18"

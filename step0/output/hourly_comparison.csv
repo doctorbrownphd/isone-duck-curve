@@ -1,0 +1,31 @@
+period,days,iso_ne,ours_W1,ours_W2,ours_W3,diff_primary,near_ties_in_period,source
+2022 full year,365,45,44,44,44,-1,3,ISO Newswire 2024-02-28
+2023 full year,365,73,72,72,72,-1,6,ISO Newswire 2024-02-28
+2023 Jan 1 to Jan 7,7,0,0,0,0,0,0,"first of 2023 on Jan 8, ISO Newswire 2024-02-28"
+2023 Jan 1 to Feb 20,51,9,8,8,8,-1,2,ISO Newswire 2024-02-28
+2023 Mar,31,18,18,18,18,0,1,ISO Newswire 2024-02-28
+2023 May 26 to 29,4,4,4,4,4,0,0,"four in a row, ISO Newswire 2024-02-28"
+2023 Jun,30,1,1,1,1,0,0,ISO Newswire 2024-02-28
+2023 Jul,31,1,1,1,1,0,0,ISO Newswire 2024-02-28
+2023 Aug,31,1,1,1,1,0,0,ISO Newswire 2024-02-28
+2023 Dec 23 to 31,9,0,0,0,0,0,0,"last of 2023 on Dec 22, ISO Newswire 2024-02-28"
+2024 Jan 1 to Feb 20,51,14,14,14,14,0,1,ISO Newswire 2024-02-28
+2024 Jan 1 to May 31,152,64,63,63,63,-1,3,ISO Newswire 2025-06-18
+2024 Feb,29,19,19,19,19,0,0,ISO Newswire 2024-11-26
+2024 Mar,31,16,16,16,16,0,1,ISO Newswire 2024-11-26
+2024 Apr,30,16,16,16,16,0,0,ISO Newswire 2024-11-26
+2024 Jul,31,0,0,0,0,0,0,ISO Newswire 2024-11-26
+2024 Aug,31,1,1,1,1,0,1,ISO Newswire 2024-11-26
+2024 Nov 1 to 25,25,10,10,10,10,0,0,ISO Newswire 2024-11-26
+2024 Jan 1 to Nov 30,335,100,99,99,99,-1,5,"100th of 2024 on Nov 30, ISO Newswire 2025-09-17"
+2024 full year,366,107,106,106,106,-1,5,ISO Newswire 2025-06-18
+2025 Jan 1 to May 31,151,69,69,68,69,0,1,ISO Newswire 2025-06-18
+2025 Mar,31,20,20,20,20,0,0,ISO Newswire 2025-06-18
+2025 Apr,30,18,18,18,18,0,0,ISO Newswire 2025-06-18
+2025 May,31,12,12,11,12,0,0,ISO Newswire 2025-06-18
+2025 Jul,31,6,6,6,6,0,0,ISO Newswire 2025-09-17
+2025 Jan 1 to Sep 13,256,100,100,99,100,0,1,"100th of 2025 on Sep 13, ISO Newswire 2025-09-17"
+2025 full year,365,134,134,133,134,0,3,ISO Newswire 2026-01-13
+2026 Jan 1 to Jan 8,8,1,0,0,0,-1,1,"one so far, on Jan 8, ISO Newswire 2026-01-13"
+2026 Jan 1 to Sep 6,249,100,97,97,97,-3,3,"100th of 2026 on Sep 6, ISO Newswire 2026-09-21"
+2026 Jan 1 to Sep 21,264,107,104,104,104,-3,3,"107th of 2026 on Sep 21, ISO Newswire 2026-09-21"
